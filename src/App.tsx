@@ -1,18 +1,20 @@
+import Navbar from "./components/Navbar/Navbar"
+
 function App() {
   return (
-    <main>
-      <div className="container">
-        <h1>SAFA TOUIL</h1>
+    <>
+      <Navbar />
 
-        <p>
-          Full-Stack JavaScript Engineer
-        </p>
+      <main>
+        <div className="container">
+          <h1>SAFA TOUIL</h1>
 
-        <button>
-          View my work
-        </button>
-      </div>
-    </main>
+          <p>Full-Stack JavaScript Engineer</p>
+
+          <button>View my work</button>
+        </div>
+      </main>
+    </>
   )
 }
 
