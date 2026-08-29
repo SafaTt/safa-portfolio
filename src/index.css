@@ -1,3 +1,52 @@
+:root {
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-bg-soft: #f7f7f5;
+
+  --color-text: #171717;
+  --color-text-muted: #6b6b6b;
+
+  --color-border: #e5e5e5;
+
+  --color-accent: #6c63ff;
+  --color-accent-hover: #574fe6;
+
+  /* Typography */
+  --font-family:
+    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+  --font-size-hero: clamp(3rem, 8vw, 7rem);
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-section: 8rem;
+
+  /* Layout */
+  --container-width: 1200px;
+  --container-padding: 1.5rem;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+
+  /* Transition */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,5 +58,71 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  width: min(100% - 3rem, var(--container-width));
+  margin-inline: auto;
+}
+/* Temporaire */
+h1 {
+  font-size: var(--font-size-hero);
+  line-height: 1;
+}
+
+p {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+}
+
+button {
+  margin-top: var(--space-lg);
+  padding: var(--space-sm) var(--space-lg);
+
+  border: none;
+  border-radius: var(--radius-md);
+
+  background: var(--color-accent);
+  color: white;
+
+  cursor: pointer;
+
+  transition: background var(--transition-fast);
+}
+
+button:hover {
+  background: var(--color-accent-hover);
+}
+/*  */
+[data-theme="dark"] {
+  --color-bg: #111111;
+  --color-bg-soft: #1a1a1a;
+
+  --color-text: #f5f5f5;
+  --color-text-muted: #a3a3a3;
+
+  --color-border: #2a2a2a;
+
+  --color-accent: #8b83ff;
+  --color-accent-hover: #a29cff;
 }

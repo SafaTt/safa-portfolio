@@ -1,7 +1,17 @@
 function App() {
   return (
     <main>
-      <h1>SAFA TOUIL</h1>
+      <div className="container">
+        <h1>SAFA TOUIL</h1>
+
+        <p>
+          Full-Stack JavaScript Engineer
+        </p>
+
+        <button>
+          View my work
+        </button>
+      </div>
     </main>
   )
 }
