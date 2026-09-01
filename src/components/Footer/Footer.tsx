@@ -8,9 +8,7 @@ function Footer() {
       <div className="container footer__content">
         <div className="footer__identity">
           <span className="footer__name">SAFA TOUIL</span>
-          <span className="footer__role">
-            Full-Stack JavaScript Engineer
-          </span>
+          <span className="footer__role">Full-Stack JavaScript Engineer</span>
         </div>
 
         <div className="footer__links">
@@ -30,23 +28,19 @@ function Footer() {
             GitHub
           </a>
 
-          <a href="mailto:safa.touil.personal@gmail.com">
-            Email
-          </a>
+          <a href="mailto:safa.touil.personal@gmail.com">Email</a>
 
-         <button
-  type="button"
-  className="footer__top"
-  aria-label="Back to top"
-  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
->
-  ↑
-</button>
+          <button
+            type="button"
+            className="footer__top"
+            aria-label="Back to top"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            ↑
+          </button>
         </div>
 
-        <span className="footer__copyright">
-          © {currentYear} Safa Touil
-        </span>
+        <span className="footer__copyright">© {currentYear} Safa Touil</span>
       </div>
     </footer>
   );
