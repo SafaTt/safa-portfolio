@@ -62,6 +62,10 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 button,

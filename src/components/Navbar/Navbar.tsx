@@ -1,6 +1,9 @@
-import "./Navbar.css"
+import "./Navbar.css";
+import useTheme from "../../hooks/use-theme";
 
 function Navbar() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="navbar">
       <nav className="container navbar__inner">
@@ -25,9 +28,18 @@ function Navbar() {
             Contact
           </a>
         </div>
+         <button
+        type="button"
+        className="navbar__theme-toggle"
+        onClick={toggleTheme}
+        aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+      >
+        {theme === "light" ? "☾" : "☀"}
+      </button>
       </nav>
+     
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
