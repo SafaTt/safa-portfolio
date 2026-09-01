@@ -69,7 +69,7 @@
   transform: translateX(3px);
 }
 
-/* S'adapter au Mobile */
+/* Responsive */
 @media (max-width: 768px) {
   .skills {
     padding-block: var(--space-2xl);
