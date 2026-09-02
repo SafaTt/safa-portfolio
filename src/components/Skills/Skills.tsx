@@ -2,20 +2,20 @@ import "./Skills.css";
 
 const skillGroups = [
   {
-    title: "Frontend",
-    skills: ["React", "React Native", "TypeScript", "JavaScript"],
+    title: "Frontend & Mobile",
+    skills: ["React", "React Native", "Expo", "Redux"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express.js", "Nest.js", "REST APIs"],
+    title: "Backend & APIs",
+    skills: ["Node.js", "Express.js", "Nest.js", "REST APIs", "WebSockets"],
   },
   {
-    title: "Database",
-    skills: ["MongoDB", "PostgreSQL"],
+    title: "Data & Services",
+    skills: ["MongoDB", "MySQL", "Firebase", "Appwrite"],
   },
   {
-    title: "Tools & Practices",
-    skills: ["Git", "GitHub", "Docker", "Agile"],
+    title: "Engineering & Delivery",
+    skills: ["TypeScript", "Git", "GitHub", "Docker", "CI/CD", "Agile"],
   },
 ];
 
@@ -25,10 +25,8 @@ function Skills() {
       <div className="container">
         <div className="skills__header">
           <span className="skills__eyebrow">SKILLS</span>
-
           <h2 className="skills__title">What I work with</h2>
         </div>
-
         <div className="skills__list">
           {skillGroups.map((group, index) => (
             <div className="skills__group" key={group.title}>
