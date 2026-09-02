@@ -1,5 +1,7 @@
 .contact {
   padding-block: var(--space-section);
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-section);
 }
 
 .contact__header {

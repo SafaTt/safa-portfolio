@@ -1,6 +1,8 @@
 .skills {
 padding-top: var(--space-3xl);
 padding-bottom: var(--space-section);
+padding-top: var(--space-2xl);
+  padding-bottom: var(--space-section);
 }
 
 .skills__header {
