@@ -19,7 +19,6 @@
 }
 
 .contact__title {
-  /* max-width: 00px; */
   margin-inline: auto;
   font-size: clamp(3rem, 7vw, 6.5rem);
   line-height: 0.95;

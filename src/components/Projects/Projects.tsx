@@ -1,10 +1,10 @@
 import "./Projects.css";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
-import clictoeatImg from "../../assets/Projects/clictoeat.png";
-import coachupImg from "../../assets/Projects/coachup.png";
-import clicclaimImg from "../../assets/Projects/cliclaim.png";
-import rugbyappImg from "../../assets/Projects/rugbyapp.png";
+import clictoeatImg from "../../assets/Projects/clictoeat.webp";
+import coachupImg from "../../assets/Projects/coachup.webp";
+import clicclaimImg from "../../assets/Projects/cliclaim.webp";
+import rugbyappImg from "../../assets/Projects/rugbyapp.webp";
 
 const projects = [
   {

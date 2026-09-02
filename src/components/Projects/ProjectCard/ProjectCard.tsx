@@ -9,7 +9,6 @@ interface Project {
   image: string;
   linkLabel?: string;
   linkUrl?: string;
-  featured?: boolean;
 }
 
 interface ProjectCardProps {
@@ -19,12 +18,17 @@ interface ProjectCardProps {
 function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article
-      className={`project-card ${
-        project.featured ? "project-card--featured" : ""
-      }`}
+      className={`project-card`}
     >
       <div className="project-card__image">
-        <img src={project.image} alt={`${project.title} project`} />
+        <img
+          src={project.image}
+          alt={`${project.title} project`}
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
 
       <div className="project-card__content">
@@ -40,9 +44,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 
         <h3>{project.title}</h3>
 
-        <p className="project-card__description">
-          {project.description}
-        </p>
+        <p className="project-card__description">{project.description}</p>
 
         <div className="project-card__technologies">
           {project.technologies.map((technology) => (
@@ -52,11 +54,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 
         {project.linkUrl && project.linkLabel && (
           <div className="project-card__links">
-            <a
-              href={project.linkUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={project.linkUrl} target="_blank" rel="noopener noreferrer">
               {project.linkLabel} ↗
             </a>
           </div>

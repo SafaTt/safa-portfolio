@@ -92,10 +92,7 @@
   border-radius: var(--radius-md);
 }
 
-/* =========================
-   Responsive
-   ========================= */
-
+/* Responsive */
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
