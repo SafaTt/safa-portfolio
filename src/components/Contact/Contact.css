@@ -20,7 +20,7 @@
   /* max-width: 00px; */
   margin-inline: auto;
   font-size: clamp(3rem, 7vw, 6.5rem);
-  line-height: 0.55;
+  line-height: 0.95;
   letter-spacing: -0.05em;
   font-weight: 600;
 }

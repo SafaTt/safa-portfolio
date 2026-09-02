@@ -4,10 +4,12 @@ interface Project {
   id: number;
   title: string;
   description: string;
+  contribution: string;
   technologies: string[];
   image: string;
-  demoUrl?: string;
-  githubUrl?: string;
+  linkLabel?: string;
+  linkUrl?: string;
+  featured?: boolean;
 }
 
 interface ProjectCardProps {
@@ -16,19 +18,31 @@ interface ProjectCardProps {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="project-card">
+    <article
+      className={`project-card ${
+        project.featured ? "project-card--featured" : ""
+      }`}
+    >
       <div className="project-card__image">
-        <img src={project.image} alt={project.title} />
+        <img src={project.image} alt={`${project.title} project`} />
       </div>
 
       <div className="project-card__content">
-        <span className="project-card__number">
-          PROJECT {String(project.id).padStart(2, "0")}
-        </span>
+        <div className="project-card__meta">
+          <span className="project-card__number">
+            {String(project.id).padStart(2, "0")}
+          </span>
+
+          <span className="project-card__contribution">
+            {project.contribution}
+          </span>
+        </div>
 
         <h3>{project.title}</h3>
 
-        <p>{project.description}</p>
+        <p className="project-card__description">
+          {project.description}
+        </p>
 
         <div className="project-card__technologies">
           {project.technologies.map((technology) => (
@@ -36,19 +50,17 @@ function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
 
-        <div className="project-card__links">
-          {project.demoUrl && (
-            <a href={project.demoUrl} target="_blank" rel="noreferrer">
-              Live demo ↗
+        {project.linkUrl && project.linkLabel && (
+          <div className="project-card__links">
+            <a
+              href={project.linkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {project.linkLabel} ↗
             </a>
-          )}
-
-          {project.githubUrl && (
-            <a href={project.githubUrl} target="_blank" rel="noreferrer">
-              GitHub ↗
-            </a>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </article>
   );

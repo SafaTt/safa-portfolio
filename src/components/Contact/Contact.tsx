@@ -1,12 +1,21 @@
+import { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const [isOpeningMail, setIsOpeningMail] = useState(false);
+
+  const handleContactClick = () => {
+    setIsOpeningMail(true);
+
+    setTimeout(() => {
+      setIsOpeningMail(false);
+    }, 1500);
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="container">
         <div className="contact__header">
-          {/* <span className="contact__eyebrow">CONTACT</span> */}
-
           <h2 className="contact__title">
             Have an idea in mind?
           </h2>
@@ -22,11 +31,18 @@ function Contact() {
           <a
             href="mailto:safa.touil.personal@gmail.com"
             className="contact__link"
+            onClick={handleContactClick}
+            aria-label="Contact Safa by email"
           >
-            <span>Contact me</span>
-            <span className="contact__arrow" aria-hidden="true">
-              ↗
+            <span>
+              {isOpeningMail ? "Opening mail…" : "Contact me"}
             </span>
+
+            {!isOpeningMail && (
+              <span className="contact__arrow" aria-hidden="true">
+                ↗
+              </span>
+            )}
           </a>
         </div>
       </div>
