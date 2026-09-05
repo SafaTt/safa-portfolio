@@ -13,7 +13,7 @@ function Hero() {
           </h1>
 
           <p className="hero__description">
-            Full-stack engineer with 2+ years of experience building
+            Full-stack engineer with 3 years of experience building
             production-ready applications with React, React Native and Node.js.
           </p>
 

@@ -45,7 +45,7 @@ function About() {
 
           <div className="about__highlights">
             <div className="about__highlight">
-              <strong>2+</strong>
+              <strong>3</strong>
               <span>Years of experience</span>
             </div>
 
