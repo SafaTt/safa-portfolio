@@ -7,27 +7,31 @@ function About() {
         <div className="about__label">
           <span>ABOUT</span>
         </div>
+
         <div className="about__content">
           <div className="about__intro">
             <h2 className="about__title">
-              I turn ideas into reliable web and mobile products.
+              I build products from idea to production.
             </h2>
 
             <div className="about__text">
               <p>
-                I'm a Full-Stack JavaScript Engineer with hands-on experience
-                building and delivering production web and mobile applications.
+                I'm a Full-Stack JavaScript Engineer with 3 years of hands-on
+                experience building web and mobile applications for real-world
+                use.
               </p>
 
               <p>
-                I work across the product, from React and React Native
-                interfaces to Node.js APIs, backend services, real-time
-                features, and deployment workflows.
+                I work across the full product lifecycle, from understanding
+                requirements and designing the architecture to building
+                interfaces, APIs, real-time features, testing, deployment, and
+                maintenance.
               </p>
 
               <p>
-                I care about building products that are clear, performant,
-                maintainable, and genuinely useful to the people who use them.
+                What matters to me is not just writing code, but building
+                software that is reliable, maintainable, and useful to the
+                people who use it.
               </p>
             </div>
           </div>
@@ -42,25 +46,6 @@ function About() {
             <span>MongoDB</span>
             <span>CI/CD</span>
           </div>
-
-          <div className="about__highlights">
-            <div className="about__highlight">
-              <strong>3</strong>
-              <span>Years of experience</span>
-            </div>
-
-            <div className="about__highlight">
-              <strong>3+</strong>
-              <span>Production products delivered</span>
-            </div>
-
-            <div className="about__highlight">
-              <strong>Full-Stack</strong>
-              <span>From interface to backend</span>
-            </div>
-          </div>
-
-         
         </div>
       </div>
     </section>

@@ -7,6 +7,7 @@ interface Project {
   contribution: string;
   technologies: string[];
   image: string;
+  impact?: string;
   linkLabel?: string;
   linkUrl?: string;
 }
@@ -17,9 +18,7 @@ interface ProjectCardProps {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article
-      className={`project-card`}
-    >
+    <article className={`project-card`}>
       <div className="project-card__image">
         <img
           src={project.image}
@@ -45,6 +44,12 @@ function ProjectCard({ project }: ProjectCardProps) {
         <h3>{project.title}</h3>
 
         <p className="project-card__description">{project.description}</p>
+
+        {project.impact && (
+          <div className="project-card__impact">
+            <strong>{project.impact}</strong>
+          </div>
+        )}
 
         <div className="project-card__technologies">
           {project.technologies.map((technology) => (

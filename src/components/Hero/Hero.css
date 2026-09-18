@@ -76,6 +76,36 @@
   transform: translateX(4px);
 }
 
+/* Impact stats */
+
+.hero__stats {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.hero__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.hero__stat strong {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.hero__stat span {
+  max-width: 120px;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+/* Visual */
+
 .hero__visual {
   height: 100%;
   min-height: 520px;
@@ -93,6 +123,7 @@
 }
 
 /* Responsive */
+
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
@@ -142,6 +173,19 @@
 
   .hero__actions {
     margin-top: 2rem;
+  }
+
+  .hero__stats {
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .hero__stat strong {
+    font-size: 1.7rem;
+  }
+
+  .hero__stat span {
+    font-size: 0.7rem;
   }
 
   .hero__visual {

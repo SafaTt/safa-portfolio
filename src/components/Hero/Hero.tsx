@@ -9,12 +9,13 @@ function Hero() {
           <p className="hero__eyebrow">FULL-STACK JAVASCRIPT ENGINEER</p>
 
           <h1 className="hero__title">
-            Building scalable web & mobile experiences.
+            Building software that gets used.
           </h1>
 
           <p className="hero__description">
-            Full-stack engineer with 3 years of experience building
-            production-ready applications with React, React Native and Node.js.
+            Full-stack engineer with 3 years of experience building and
+            shipping production web & mobile applications with React,
+            React Native and Node.js.
           </p>
 
           <div className="hero__actions">
@@ -24,6 +25,23 @@ function Hero() {
                 →
               </span>
             </a>
+          </div>
+
+          <div className="hero__stats">
+            <div className="hero__stat">
+              <strong>3+</strong>
+              <span>Years Experience</span>
+            </div>
+
+            <div className="hero__stat">
+              <strong>150+</strong>
+              <span>Google Play Downloads</span>
+            </div>
+
+            <div className="hero__stat">
+              <strong>2</strong>
+              <span>Countries</span>
+            </div>
           </div>
         </div>
 

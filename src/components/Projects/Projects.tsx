@@ -14,6 +14,7 @@ const projects = [
       "Restaurant management and ordering platform built for real-world business operations.",
     contribution: "Full-Stack Web Development",
     technologies: ["React", "Node.js", "JavaScript", "MongoDB"],
+    impact: "Used in Tunisia & Portugal",
     image: clictoeatImg,
     linkLabel: "View live",
     linkUrl: "https://clictoeat.com",
@@ -25,6 +26,7 @@ const projects = [
       "Educational mobile application designed for multilingual and offline learning experiences.",
     contribution: "Mobile Development",
     technologies: ["React Native", "TypeScript", "Expo"],
+    impact: "50+ downloads",
     image: coachupImg,
     linkLabel: "Google Play",
     linkUrl:
@@ -37,6 +39,7 @@ const projects = [
       "Mobile application for managing institutional claims and related workflows.",
     contribution: "Mobile & Backend Development",
     technologies: ["React Native", "Node.js", "Nest.js"],
+    impact: "100+ downloads",
     image: clicclaimImg,
     linkLabel: "Google Play",
     linkUrl:
@@ -51,7 +54,8 @@ const projects = [
     technologies: ["React Native", "Node.js", "WebSockets"],
     image: rugbyappImg,
     linkLabel: "View demo",
-    linkUrl: "https://drive.google.com/file/d/1gWuA2EBJdhfbx7kJmMV9TUbYodGo-0lY/view?usp=sharing",
+    linkUrl:
+      "https://drive.google.com/file/d/1gWuA2EBJdhfbx7kJmMV9TUbYodGo-0lY/view?usp=sharing",
   },
 ];
 
